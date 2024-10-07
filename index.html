@@ -7,69 +7,75 @@
     <title>Laboratorio</title>
     <style>
         /* Estilo general */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
 
-/* Contenedor con imagen de fondo */
-.background-container {
-    position: relative;
-    height: 100vh;
-    background-image: url('./Imagenes/CafeFondo.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        /* Contenedor con imagen de fondo */
+        .background-container {
+            position: relative;
+            height: 100vh;
+            background-image: url('./Imagenes/CafeFondo.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Cuadro de login */
-.login-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-}
+        /* Cuadro de login */
+        .login-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
 
-/* Estilo del formulario */
-.login-box h2 {
-    margin-bottom: 20px;
-}
+        /* Estilo del formulario */
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
 
-.login-box label {
-    display: block;
-    margin: 10px 0 5px;
-}
+        .login-box label {
+            display: block;
+            margin: 10px 0 5px;
+        }
 
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
 
-.login-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.login-box button:hover {
-    background-color: #4cae4c;
-}
+        .login-box button:hover {
+            background-color: #4cae4c;
+        }
 
     </style>
+
+    <script>
+        function redirigir() {
+            window.location.href = "bienvenida.html";  // Redirige a la página de bienvenida
+        }
+    </script>
     
 </head>
 
@@ -89,11 +95,11 @@ body, html {
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" required>
 
-                    <button type="submit">Ingresar</button>
+                    <button type="button" onclick="redirigir()">Ingresar</button>
                 </form>
             </div>
         </div>
-
+    </div>
 
 </body>
 
