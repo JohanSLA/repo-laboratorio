@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <style>
+        /* Estilo general */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fondo de imagen */
+        .background-container {
+            position: relative;
+            height: 100vh;
+            background-image: url('./Imagenes/cafeSala.jpg');  /* Aquí colocas la imagen de fondo que desees */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Texto de bienvenida */
+        .welcome-box {
+            background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-box h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="welcome-box">
+            <h1>¡Bienvenido!</h1>
+        </div>
+    </div>
+</body>
+</html>
